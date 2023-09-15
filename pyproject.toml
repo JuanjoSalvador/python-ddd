@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "python-ddd"
+version = "0.1.0"
+description = "Domain-Driven Design Python Application boilerplate"
+authors = ["Juanjo Salvador <juanjosalvador@netc.eu>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "python_ddd"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pre-commit = "^3.4.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.4.2"
+black = "^23.9.1"
+mypy = "^1.5.1"
+flake8 = "^6.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
